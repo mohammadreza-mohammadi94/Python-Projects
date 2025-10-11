@@ -1,5 +1,4 @@
 # Python Projects Collection
-
 A curated collection of small Python projects that are perfect for practice, learning, or quick references. Each project stands alone and demonstrates a focused concept or implementation.
 
 ---
