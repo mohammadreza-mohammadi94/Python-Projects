@@ -12,15 +12,33 @@ The problem is stated as follows:
 
 The simulation shows that it is indeed advantageous to switch doors, with the probability of winning the car being approximately 2/3 when switching, and 1/3 when not switching.
 
-## How to Run the Simulation
+## Web App Simulation
 
-To run the simulation, navigate to the `src` directory and execute the `monty_hall.py` script from your terminal:
+This project includes a web-based simulation built with Streamlit. The interactive UI allows you to visualize the probabilities in real-time.
+
+### Screenshot
+
+![Monty Hall Problem Simulation](images/app.png)
+
+### How to Run the Web App
+
+To run the web app, navigate to the `src` directory and execute the `app.py` script using Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+## Command-Line Simulation
+
+### How to Run the Simulation
+
+To run the command-line simulation, navigate to the `src` directory and execute the `monty_hall.py` script from your terminal:
 
 ```bash
 python monty_hall.py
 ```
 
-## The Code
+### The Code
 
 The simulation is implemented in the `monty_hall.py` file. It consists of two main functions:
 
@@ -29,7 +47,7 @@ The simulation is implemented in the `monty_hall.py` file. It consists of two ma
 
 The script runs 10,000 trials by default and prints the winning percentages for both strategies.
 
-## Expected Output
+### Expected Output
 
 When you run the script, you will see an output similar to the following:
 
