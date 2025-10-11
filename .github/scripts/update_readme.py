@@ -1,4 +1,5 @@
 import os
+import urllib.parse
 
 def get_project_folders():
     """
@@ -34,7 +35,7 @@ def update_readme(projects):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    project_list_md = "\n".join([f"- [{project}](./{project}/) - {get_project_description(project)}" for project in projects])
+    project_list_md = "\n".join([f"- [{project}](./{urllib.parse.quote(project)}/) - {get_project_description(project)}" for project in projects])
 
     # Use a placeholder in the README to mark where the project list should go.
     start_placeholder = "<!-- PROJECTS_LIST_START -->"
