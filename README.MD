@@ -12,7 +12,7 @@ A curated collection of small Python projects that are perfect for practice, lea
 - [Number Guesser](./Number%20Guesser/) - This solution provides a modular approach to the Number Guesser Game. The game generates a random number between 1 and 100, and the user is prompted to guess this number. For each incorrect guess, the user receives a hint and their score is reduced.
 - [Password Generator](./Password%20Generator/) - This project is a Python script for generating various types of passwords. It provides a flexible framework for creating PINs, complex random passwords, and memorable passphrases.
 - [Password Generator - GUI](./Password%20Generator%20-%20GUI/) - This small Python project provides a set of password generators and a minimal GUI wrapper. It includes utilities to create numeric PINs, random-character passwords (with options for numbers and symbols), and memorable passphrase-style passwords built from an English word list.
-- [Rock-Paper-Scissors](./Rock-Paper-Scissors/) - This is a simple command-line Rock-Paper-Scissors game implemented in Python.
+- [Rock-Paper-Scissors](./Rock-Paper-Scissors/) - No description available.
 <!-- PROJECTS_LIST_END -->
 
 ---
