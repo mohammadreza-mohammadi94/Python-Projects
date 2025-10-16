@@ -7,6 +7,7 @@ A curated collection of small Python projects that are perfect for practice, lea
 
 <!-- PROJECTS_LIST_START -->
 - [Birthday Problem Simulation](./Birthday%20Problem%20Simulation/) - This project is a Python simulation of the famous Birthday Problem. It demonstrates the surprisingly high probability of two people sharing a birthday in a relatively small group.
+- [Contact Book](./Contact%20Book/) - No description available.
 - [Happy Numbers](./Happy%20Numbers/) - A Python implementation to determine whether a number is a "happy number" or not.
 - [Monty Hall Problem Simulation](./Monty%20Hall%20Problem%20Simulation/) - This project is a Python simulation of the famous Monty Hall problem. It demonstrates the counter-intuitive probabilities involved in the game.
 - [Number Guesser](./Number%20Guesser/) - This solution provides a modular approach to the Number Guesser Game. The game generates a random number between 1 and 100, and the user is prompted to guess this number. For each incorrect guess, the user receives a hint and their score is reduced.
