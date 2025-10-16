@@ -15,6 +15,7 @@ A curated collection of small Python projects that are perfect for practice, lea
 - [Password Generator - GUI](./Password%20Generator%20-%20GUI/) - This small Python project provides a set of password generators and a minimal GUI wrapper. It includes utilities to create numeric PINs, random-character passwords (with options for numbers and symbols), and memorable passphrase-style passwords built from an English word list.
 - [Rock-Paper-Scissors](./Rock-Paper-Scissors/) - No description available.
 - [Tic-Tac-Toe](./Tic-Tac-Toe/) - No description available.
+- [Youtube Downloader](./Youtube%20Downloader/) - No description available.
 <!-- PROJECTS_LIST_END -->
 
 ---
