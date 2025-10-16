@@ -1,0 +1,60 @@
+[project]
+name = "youtube-dl-pro"
+version = "1.0.0"
+description = "A professional YouTube video and playlist downloader with quality selection and progress tracking"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Multimedia :: Video"
+]
+
+dependencies = [
+    "yt-dlp>=2023.3.4",
+    "tqdm>=4.65.0",
+    "rich>=13.4.1",
+    "typer>=0.9.0",
+    "pydantic>=2.0.0",
+    "moviepy>=1.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "black>=23.3.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mypy>=1.3.0",
+]
+
+[project.scripts]
+ytdl = "src.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+ignore_missing_imports = true
