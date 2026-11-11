@@ -11,7 +11,6 @@ A professional-grade YouTube video and playlist downloader with quality selectio
 - 🎯 Skip existing files option
 - 🎨 Beautiful CLI interface with rich formatting
 - 💪 Type-safe implementation with error handling
-- 🌟 Run from anywhere without activating virtual environment
 
 ## Project Structure
 
@@ -23,8 +22,6 @@ youtube_dl_pro/
 │   ├── __init__.py
 │   ├── cli.py         # Command-line interface
 │   └── downloader.py  # Core downloader functionality
-├── ytdl.cmd           # Windows command script for global access
-├── add_to_path.ps1    # PowerShell script to add ytdl to PATH
 ├── pyproject.toml     # Project configuration and dependencies
 ├── requirements.txt   # Pinned dependencies
 ├── .gitignore
@@ -33,8 +30,6 @@ youtube_dl_pro/
 
 ## Installation
 
-### Method 1: Quick Installation (Recommended)
-
 1. Clone the repository:
 
 ```bash
@@ -42,35 +37,17 @@ git clone <your-repo-url>
 cd youtube_dl_pro
 ```
 
-2. Run the setup script:
-
-```powershell
-# Run in PowerShell as your regular user (no admin required)
-.\add_to_path.ps1
-```
-
-3. Open a new terminal window, and you're ready to use `ytdl` from anywhere!
-
-### Method 2: Manual Installation
-
-1. Clone the repository:
-
-```bash
-git clone <your-repo-url>
-cd youtube-dl-pro
-```
-
 2. Create and activate a virtual environment:
 
 ```bash
-python -m venv venv
+python -m venv .venv
 # On Windows:
-.\venv\Scripts\activate
+.\.venv\Scripts\activate
 # On Unix/macOS:
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
-3. Install the package in editable mode with all dependencies:
+3. Install the package:
 
 ```bash
 pip install -e .
@@ -78,23 +55,16 @@ pip install -e .
 
 ## Usage
 
-The tool can be used in two ways:
-
-### 1. Direct Usage (After Quick Installation)
-
-You can use the `ytdl` command from any directory:
+Make sure your virtual environment is activated before using the tool:
 
 ```bash
-# Download as MP3
-ytdl download "https://www.youtube.com/watch?v=VIDEO_ID" -f mp3
-
-# Download as MP4 in specific quality
-ytdl download "https://www.youtube.com/watch?v=VIDEO_ID" -q 720p -f mp4
+# On Windows:
+.\.venv\Scripts\activate
+# On Unix/macOS:
+source .venv/bin/activate
 ```
 
-### 2. Manual Usage (Inside Virtual Environment)
-
-If you prefer using the virtual environment:
+### Download Commands
 
 ```bash
 # Activate the virtual environment first
