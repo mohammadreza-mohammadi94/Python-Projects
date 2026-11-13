@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>افزودن / ویرایش آیتم</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{% if action == "add" %}افزودن{% else %}ویرایش{% endif %} آیتم</h1>
+    <form method="POST">
+        <label>نام: <input type="text" name="name" value="{{ item.name if item else '' }}" required></label><br>
+        <label>توضیحات: <input type="text" name="description" value="{{ item.description if item else '' }}" required></label><br>
+        <button type="submit">{% if action == "add" %}افزودن{% else %}ویرایش{% endif %}</button>
+    </form>
+    <a href="{{ url_for('get_items') }}">بازگشت</a>
+</body>
+</html>
